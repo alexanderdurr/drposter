@@ -35,6 +35,8 @@ $endfor$
 $for(include-before)$
 $include-before$
 $endfor$
+
+<div class="myclass">
 <div class="slides $if(fill_page)$fill_page$endif$">
 
 $if(title)$
@@ -49,10 +51,22 @@ $endfor$
 $if(date)$
     <h3 class="date">$date$</h3>
 $endif$
+<div class="logotypes">
+<ul>
+<li><img src="Resources/ECON_RGB.svg" /></li>
+<li><img src="Resources/KTH_Logotyp_RGB_2013.png" /></li>
+<li><img src="https://www.sics.se/sites/all/themes/swedishict/themes/sics/logo.png" /></li>
+</ul>
+</div>
 </header>
 $endif$
 
 $body$
+</div>
+</div>
+
+<div id="wasp">
+  <div id="wasp_logo"></div>
 </div>
 $for(include-after)$
 $include-after$

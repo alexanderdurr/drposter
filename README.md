@@ -1,54 +1,24 @@
-drposter: Generate Academic Posters in R Markdown and CSS
-================
-<span class="presenter">Ben Bucior<sup>1</sup></span>, \<Your name
-here\><sup>2</sup>
+# drposter: Generate Academic Posters in R Markdown and CSS
 
-<ol class="affiliations">
+This fork is adapted for [WASP](http://wasp-sweden.org).
 
-<li>
-
-Northwestern University, Evanston, IL, USA
-
-</li>
-
-<li>
-
-Earth
-
-</li>
-
-</ol>
-
-<!-- The name drposter came from a convoluted pun: it's a poster based on R, M.D. files (not a real doctor),
-and it also generates academic posters for PhD's and others. -->
-
-# 
-
-<!-- Span the first column for four rows, that way we can capture the usage block, two rows of template examples, and refs/footer information -->
+![poster](poster-0.png)
 
 ## Overview
 
-  - Template for writing HTML/CSS posters using Rmarkdown
-  - Same conventions as pandoc presentations
-    (e.g. reveal.js)<sup>1–3</sup>
-  - Separates content from presentation
-  - Goal: automatically get consistent spacing from specifications
-    instead of a manual layout
-
-<p style="text-align:center;">
-
-![](drposter.png)
-
-</p>
+* Template for writing HTML/CSS posters using Rmarkdown
+* Same conventions as pandoc presentations
+  (e.g. reveal.js)
+* Separates content from presentation
+* Goal: automatically get consistent spacing from specifications
+  instead of a manual layout
 
 ## Rmarkdown structure
 
-<div class="fullwidth">
-
-See also the [source
-code](https://github.com/bbucior/drposter/tree/master/inst/example/poster.Rmd)
+See the [source
+code](https://github.com/martisak/drposter/tree/master/inst/example/poster.Rmd)
 and [compiled
-pdf](https://github.com/bbucior/drposter/tree/master/inst/example/poster.pdf)
+pdf](https://github.com/martisak/drposter/tree/master/inst/example/poster.pdf)
 for this poster on Github.
 
 </div>
