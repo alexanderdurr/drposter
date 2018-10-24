@@ -131,6 +131,15 @@ selector to automatically get theming support, then break up these
 details into separate theme files.
 
 
+## Pandoc
+
+You don't need to use R if you don't want to. Instead, you can directly run `pandoc`.
+
+```
+pandoc +RTS -K512m -RTS poster.Rmd --to html4 --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash+smart --output test.html --email-obfuscation none --variable fill_page= --variable lib_dir=drposter_files/ --standalone --section-divs --template drposter_files//drposter.html --highlight-style pygments --css custom.css --mathjax -F pandoc-citeproc
+```
+
+
 ## See also
 
 * tikzposter latex template, and its example themes for inspiration
