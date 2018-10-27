@@ -8,7 +8,7 @@ This fork is adapted for [WASP](http://wasp-sweden.org).
 
 * Template for writing HTML/CSS posters using Rmarkdown or Markdown.
 * Same conventions as `pandoc` presentations
-  (e.g. `reveal.js)
+  (e.g. `reveal.js`)
 * Separates content from presentation
 * Goal: automatically get consistent spacing from specifications
   instead of a manual layout
@@ -75,7 +75,7 @@ probably still some that are untested.
 
 ### This package
 
-* `drposter may be used under different licenses at your option
+* drposter may be used under different licenses at your option
 * Entire R package: GPLv3 (like [R
   markdown](https://github.com/rstudio/rmarkdown))
 * Files for the [drposter pandoc
@@ -88,7 +88,7 @@ probably still some that are untested.
 ## Community
 
 For more information, please visit the
-project page at <https://github.com/bbucior/drposter>. Feel free to
+project page at <https://github.com/martisak/drposter>. Feel free to
 report issues, pull requests, or general comments on Github.
 
 ## How to use this package
@@ -142,7 +142,7 @@ git submodule add https://github.com/citation-style-language/styles.git
 ## Customizable themes
 
 Note the features for theming. If you had a special class attached to
-the `.level1` or `.slides/theme, you could use a general descendent
+the `.level1` or `.slides/theme`, you could use a general descendent
 selector to automatically get theming support, then break up these
 details into separate theme files.
 
