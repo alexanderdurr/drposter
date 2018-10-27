@@ -23,6 +23,10 @@ css:
 # This crashes without writing the output file.
 #poster.pdf: poster.html
 #	${WHICH_CHROME} --headless --print-to-pdf=$@ $^
+pandoc:
+	pandoc poster.Rmd -f markdown -M lib_dir:drposter_files/ \
+		--section-divs --template drposter_files//drposter.html \
+		--css custom.css -F pandoc-citeproc -o poster.html
 
 poster.html: poster.Rmd css drposter.png
 	${RUN_R} -e 'rmarkdown::render("$<")'
