@@ -2,7 +2,7 @@
 
 This fork is adapted for [WASP](http://wasp-sweden.org).
 
-![poster](poster-0.png)
+![poster](poster-0.png | width=400)
 
 ## Overview
 
@@ -12,6 +12,16 @@ This fork is adapted for [WASP](http://wasp-sweden.org).
 * Separates content from presentation
 * Goal: automatically get consistent spacing from specifications
   instead of a manual layout
+
+### Installation and updates
+
+1.  `devtools::install_github("martisak/drposter", dep=FALSE)` (or
+    `install_local` on a downloaded copy) to install/update the package
+2.  In RStudio, you can find the format listed as a template under the
+    “New R Markdown” wizard, or use the command line.
+3.  Template files are cached in `drposter_files/` to decouple your
+    poster from the installed package version. Use `drposter_update` to
+    resync them.
 
 ## Rmarkdown structure
 
@@ -93,22 +103,12 @@ report issues, pull requests, or general comments on Github.
 
 ## How to use this package
 
-### Installation and updates
-
-1.  `devtools::install_github("martisak/drposter", dep=FALSE)` (or
-    `install_local` on a downloaded copy) to install/update the package
-2.  In RStudio, you can find the format listed as a template under the
-    “New R Markdown” wizard, or use the command line.
-3.  Template files are cached in `drposter_files/` to decouple your
-    poster from the installed package version. Use `drposter_update` to
-    resync them.
-
 ### Customizing the template
 
 * Avoid modifying `drposter_files/`
 * Indirectly override those rules in your own `custom.css`.
     * Easier to see and share your changes
-    * Decouples your modifications from the base drposter styles
+    * Decouples your modifications from the base `drposter styles
 * Customize the format of the bibliography using a CSL
   style. Add the styles repository as a submodule and track your poster in `git`. 
 
@@ -117,17 +117,21 @@ git init
 git submodule add https://github.com/citation-style-language/styles.git
 ```
 
-* Instead of using `references` in the header, use `bibliography: myrefs.bib`
-* To change the logotypes, you will need to edit `inst/rmarkdown/templates/drposter/skeleton/drposter_files/drposter.html`
+#### References
+
+Instead of using `references` in the header, use `bibliography: myrefs.bib`.
+
+If you are using a reference manager such as [Mendeley](https://mendeley.com), it can generate bib-files for you. I recommend version controlling these and adding that repository as a submodule to your poster repository.
+
+#### Logotypes
+
+Add your logotypes in the document header.
 
 ```
-<div class="logotypes">
-<ul>
-<li><img src="Resources/ECON_RGB.svg" /></li>
-<li><img src="Resources/KTH_Logotyp_RGB_2013.png" /></li>
-<li><img src="https://www.sics.se/sites/all/themes/swedishict/themes/sics/logo.png" /></li>
-</ul>
-</div>
+logotypes:
+  - Resources/ECON_RGB.svg
+  - Resources/KTH_Logotyp_RGB_2013.png
+  - Resources/rise.png
 ```
 
 ### Export
@@ -142,7 +146,7 @@ git submodule add https://github.com/citation-style-language/styles.git
 ## Customizable themes
 
 Note the features for theming. If you had a special class attached to
-the `.level1` or `.slides/theme`, you could use a general descendent
+the `.level1` or `.slides/theme, you could use a general descendent
 selector to automatically get theming support, then break up these
 details into separate theme files.
 

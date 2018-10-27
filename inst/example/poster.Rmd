@@ -5,6 +5,10 @@ output:
   drposter::drposter_poster:
     fill_page: FALSE
     self_contained: FALSE
+logotypes:
+  - Resources/ECON_RGB.svg
+  - Resources/KTH_Logotyp_RGB_2013.png
+  - Resources/rise.png
 csl: american-chemical-society.csl
 references:
 - id: revealjs
