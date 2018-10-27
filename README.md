@@ -2,7 +2,7 @@
 
 This fork is adapted for [WASP](http://wasp-sweden.org).
 
-![poster](poster-0.png | width=400)
+![poster](poster-0.png)
 
 ## Overview
 
